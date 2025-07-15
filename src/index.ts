@@ -1,4 +1,4 @@
-import { checkAndSendLatestPost } from './services/wpService';
+import { checkAndSendLatestPost } from './services/wpService.js';
 
 const INTERVAL_MINUTES = 1;
 
