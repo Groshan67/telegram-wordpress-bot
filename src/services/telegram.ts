@@ -5,11 +5,7 @@ import { config } from '../config/index.js';
 
 const bot = new Telegraf(config.TELEGRAM_BOT_TOKEN);
 
-export const sendToTelegram = async (message: string): Promise<void> => {
-    await bot.telegram.sendMessage(config.TELEGRAM_CHAT_ID, message, {
-        parse_mode: 'HTML'
-    });
-};
+
 
 export const sendToTelegramGallery = async (
     title: string,
